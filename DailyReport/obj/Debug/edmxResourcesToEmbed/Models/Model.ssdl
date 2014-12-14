@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DailyReportModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="DailyReportModelStoreContainer">
+    <EntitySet Name="DailyMissionStorage" EntityType="DailyReportModel.Store.DailyMissionStorage" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="FKMissionType" EntityType="DailyReportModel.Store.FKMissionType" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="DailyMissionStorage">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MissionTitle" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="MissionDes" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="TypeID" Type="int" Nullable="false" />
+    <Property Name="CreateTime" Type="datetime" Nullable="false" />
+    <Property Name="UserID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FKMissionType">
+    <Key>
+      <PropertyRef Name="TypeID" />
+    </Key>
+    <Property Name="TypeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="20" />
+  </EntityType>
+</Schema>

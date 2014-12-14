@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DailyReportModelStoreContainer" CdmEntityContainer="DailyReportEntities">
+    <EntitySetMapping Name="DailyMissionStorage">
+      <EntityTypeMapping TypeName="DailyReportModel.DailyMissionStorage">
+        <MappingFragment StoreEntitySet="DailyMissionStorage">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MissionTitle" ColumnName="MissionTitle" />
+          <ScalarProperty Name="MissionDes" ColumnName="MissionDes" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FKMissionType">
+      <EntityTypeMapping TypeName="DailyReportModel.FKMissionType">
+        <MappingFragment StoreEntitySet="FKMissionType">
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
