@@ -77,6 +77,7 @@
 								</a>
 							</div>
 						</div>
+       @{ Html.BeginForm("Index", "Daily", FormMethod.Post, new { @class = "form-horizontal" }); }
 						<div class="portlet-body form">
 							<!-- BEGIN FORM-->
 							<form action="#" class="form-horizontal form-bordered">
@@ -85,7 +86,8 @@
 									<div class="form-group">
 										<label class="control-label col-md-3">Mission Title</label>
 										<div class="col-md-9">
-											<input type="text" class="form-control" maxlength="25" name="defaultconfig" id="maxlength_alloptions">
+                                            <!--defaultconfig-->
+											<input type="text" class="form-control" maxlength="25" name="mission_tittle" id="maxlength_alloptions" >
 											<span class="help-block">
 											</span>
 										</div>
@@ -94,10 +96,10 @@
 									<div class="form-group">
 										<label class="control-label col-md-3">Mission Type</label>
 										<div class="col-md-9">
-										 <select class="bs-select form-control input-small" data-style="green">
-													<option>好友清單</option>
-													<option>大地圖</option>
-													<option>角色強化 </option>
+										 <select class="bs-select form-control input-small" data-style="green" name="typeid">
+													<option value='1_sre'>好友清單</option>
+													<option value='2_sre'>大地圖</option>
+													<option value='3_sre'>角色強化 </option>
 												</select>
 										</div>
 									</div>
@@ -126,6 +128,7 @@
 							</form>
 							<!-- END FORM-->
 						</div>
+    @{Html.EndForm();}
 					</div>
 
 	<!-- BEGIN CONDENSED TABLE PORTLET-->

@@ -14,6 +14,7 @@
     <Property Name="TypeID" Type="Int32" Nullable="false" />
     <Property Name="CreateTime" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Type="Decimal" Name="SpendTime" Nullable="false" Precision="2" Scale="1" />
   </EntityType>
   <EntityType Name="FKMissionType">
     <Key>
