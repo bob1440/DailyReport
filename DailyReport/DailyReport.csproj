@@ -3140,6 +3140,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\DataVerification\DVMissionType.cs" />
     <Compile Include="App_Start\ExcelFunc\ExcelStyleRender.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Utilities\Common\Files.cs" />
@@ -3176,6 +3177,9 @@
       <DependentUpon>Model.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\Repository\GenericRepository.cs" />
+    <Compile Include="Models\ViewModel\Base\VMBase.cs" />
+    <Compile Include="Models\ViewModel\VMDailyReportMain.cs" />
+    <Compile Include="Models\ViewModel\VMMissionTypeMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -3580,7 +3584,6 @@
     <Content Include="Views\Puwu\test.cshtml" />
     <Content Include="Views\Home\Demo.cshtml" />
     <Content Include="Views\Home\Table_editable.cshtml" />
-    <Content Include="Views\Customer\Index.cshtml" />
     <EntityDeploy Include="Models\Model.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model.Designer.cs</LastGenOutput>

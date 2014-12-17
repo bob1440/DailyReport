@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DailyReport.App_Start.DataVerification;
+using DailyReport.Models.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,8 +14,9 @@ namespace DailyReport.Controllers
         // GET: /Daily/
         public ActionResult Index()
         {
-            Response.Write("Get:");
-            return View();
+           VMDailyReportMain rm = new VMDailyReportMain();
+           rm.MissionTypes=DVMissionType.Instance.GetAllMissionType();
+           return View(rm);
         }
 
         [HttpPost]

@@ -1,4 +1,4 @@
-﻿
+﻿@model DailyReport.Models.ViewModel.VMDailyReportMain
 @{
     ViewBag.Title = "Index";
 }
@@ -97,10 +97,11 @@
 										<label class="control-label col-md-3">Mission Type</label>
 										<div class="col-md-9">
 										 <select class="bs-select form-control input-small" data-style="green" name="typeid">
-													<option value='1_sre'>好友清單</option>
-													<option value='2_sre'>大地圖</option>
-													<option value='3_sre'>角色強化 </option>
-												</select>
+											@foreach (var item in Model.MissionTypes)
+                                            {
+                                               <option value='@(item.TypeID)'>@(item.Name)</option>
+                                            }
+                                         </select>
 										</div>
 									</div>
                                   
