@@ -1,26 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="DailyReportModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-  <EntityContainer Name="DailyReportEntities" p1:LazyLoadingEnabled="true">
-    <EntitySet Name="DailyMissionStorage" EntityType="DailyReportModel.DailyMissionStorage" />
-    <EntitySet Name="FKMissionType" EntityType="DailyReportModel.FKMissionType" />
-  </EntityContainer>
+<Schema Namespace="DailyReportModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
   <EntityType Name="DailyMissionStorage">
     <Key>
       <PropertyRef Name="ID" />
     </Key>
-    <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
-    <Property Name="MissionTitle" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
-    <Property Name="MissionDes" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MissionTitle" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MissionDes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="TypeID" Type="Int32" Nullable="false" />
     <Property Name="CreateTime" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="UserID" Type="Int32" Nullable="false" />
-    <Property Type="Decimal" Name="SpendTime" Nullable="false" Precision="2" Scale="1" />
+    <Property Name="SpendTime" Type="Decimal" Precision="2" Scale="1" Nullable="false" />
   </EntityType>
   <EntityType Name="FKMissionType">
     <Key>
       <PropertyRef Name="TypeID" />
     </Key>
-    <Property Name="TypeID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
-    <Property Name="Name" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="TypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
   </EntityType>
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="DailyMissionStorage" EntityType="Self.DailyMissionStorage" />
+    <EntitySet Name="FKMissionType" EntityType="Self.FKMissionType" />
+  </EntityContainer>
 </Schema>

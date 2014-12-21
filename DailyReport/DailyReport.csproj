@@ -3140,6 +3140,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\DataVerification\DVDailyMission.cs" />
     <Compile Include="App_Start\DataVerification\DVMissionType.cs" />
     <Compile Include="App_Start\ExcelFunc\ExcelStyleRender.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -3157,6 +3158,7 @@
     <Compile Include="Models\DailyMissionStorage.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Extend\ModelExtend.cs" />
     <Compile Include="Models\FKMissionType.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
@@ -3584,6 +3586,7 @@
     <Content Include="Views\Puwu\test.cshtml" />
     <Content Include="Views\Home\Demo.cshtml" />
     <Content Include="Views\Home\Table_editable.cshtml" />
+    <Content Include="Views\Daily\Index.cshtml" />
     <EntityDeploy Include="Models\Model.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model.Designer.cs</LastGenOutput>
@@ -3601,7 +3604,6 @@
       <DependentUpon>Model.edmx</DependentUpon>
       <LastGenOutput>Model.cs</LastGenOutput>
     </Content>
-    <Content Include="Views\Daily\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

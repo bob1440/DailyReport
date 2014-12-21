@@ -97,7 +97,7 @@
 										<label class="control-label col-md-3">Mission Type</label>
 										<div class="col-md-9">
 										 <select class="bs-select form-control input-small" data-style="green" name="typeid">
-											@foreach (var item in Model.MissionTypes)
+											@foreach (var item in Model.getData.MissionTypes)
                                             {
                                                <option value='@(item.TypeID)'>@(item.Name)</option>
                                             }
@@ -110,7 +110,7 @@
 										<label class="control-label col-md-3">Spinner 2</label>
 										<div class="col-md-9">
 											<div class="input-inline input-medium">
-												<input id="touchspin_demo2" type="text" value="1" name="demo1" class="form-control">
+												<input id="touchspin_demo2" type="text" value="1" name="spenttime" class="form-control">
 											</div>
 											<span class="help-block">
 											example with decimal steps </span>
@@ -153,7 +153,7 @@
 							<div class="table-scrollable">
 								<table class="table table-condensed table-hover">
 								<thead>
-								<tr>
+                                <tr>
 									<th>
 										 #
 									</th>
@@ -172,24 +172,32 @@
 								</tr>
 								</thead>
 								<tbody>
+                                    @foreach (var item in Model.getData.TodayMission)
+                                    {
+                                    
+
 								<tr>
 									<td>
-										 1
+                                        @(item.ID)
 									</td>
 									<td>
-										 解決FB串接問題
+                                        @(item.MissionTitle)
+										
 									</td>
 									<td>
-										 4.5H
+                                        @(item.SpendTime)H
 									</td>
 									<td>
 										 2014/12/13
 									</td>
 									<td>
+
 										<span class="label label-sm label-success">
-										好友清單 </span>
+										@(item.MissionTypeName) </span>
 									</td>
 								</tr>
+                                          
+                                    }
 								
 								</tbody>
 								</table>

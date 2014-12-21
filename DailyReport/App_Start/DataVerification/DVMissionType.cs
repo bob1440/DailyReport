@@ -10,7 +10,6 @@ namespace DailyReport.App_Start.DataVerification
 {
     public class DVMissionType
     {
-
         private static DVMissionType _Instance;
         public static DVMissionType Instance
         {
@@ -27,11 +26,11 @@ namespace DailyReport.App_Start.DataVerification
 
         private IRepository<FKMissionType> MissiontypeRepository;     
 
+
          public DVMissionType()
         {
             this.MissiontypeRepository = new GenericRepository<FKMissionType>();           
         }
-
 
         public List<FKMissionType> GetAllMissionType()
          {
