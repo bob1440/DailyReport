@@ -43,8 +43,8 @@ namespace DailyReport.App_Start.DataVerification
         {
          DateTime d2=new DateTime(DateTime.Now.AddDays(1).Year,DateTime.Now.AddDays(1).Month,DateTime.Now.AddDays(1).Day);
          DateTime d1 = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
-         List<DailyMissionStorage> result = this.DailyMissionRepository.GetByParm(x => x.CreateTime > d1 && x.CreateTime < d2).ToList();
-          List<FKMissionType> t = DVMissionType.Instance.GetAllMissionType();
+         List<DailyMissionStorage> result = this.DailyMissionRepository.GetByParm(x => x.CreateTime> d1 && x.CreateTime < d2).ToList();
+         List<FKMissionType> t = DVMissionType.Instance.GetAllMissionType();
          //取得標籤名稱的匿名函數
             getTypeName myDelegate = (x, h) =>
             {
