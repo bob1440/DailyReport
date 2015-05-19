@@ -1,4 +1,5 @@
 ﻿using DailyReport.App_Start.DataVerification;
+using DailyReport.Models;
 using DailyReport.Models.ViewModel;
 using System;
 using System.Collections.Generic;
@@ -15,21 +16,32 @@ namespace DailyReport.Controllers
         public ActionResult Index()
         {
            VMDailyReportMain rm = new VMDailyReportMain();
-           rm.MissionTypes=DVMissionType.Instance.GetAllMissionType();
+      
+           rm.getData.MissionTypes=DVMissionType.Instance.GetAllMissionType();
+           rm.getData.TodayMission = DVDailyMission.Instance.GetTodayMission();
            return View(rm);
         }
 
         [HttpPost]
-        public ActionResult Index(string mission_tittle)
+        public ActionResult Index(string mission_tittle, int typeid, float spenttime)
         {
-            Response.Write("Post:");
-            Response.Write("P1:" + mission_tittle + "<br>");
-            Response.Write("P[0]:" + Request.Form[0] + "<br>");
-            Response.Write("P[1]:" + Request.Form[1] + "<br>");
 
-            Response.Write("sum:" + Request.Form.Count);
+            DailyMissionStorage dm = new DailyMissionStorage();
+            dm.UserID = 1;
+            dm.MissionTitle = dm.MissionDes = mission_tittle;
+            dm.TypeID = typeid;
+            dm.SpendTime = (decimal) spenttime;
+            dm.CreateTime = DateTime.Now;
 
-            return View();
+            DVDailyMission.Instance.CreateDailyMission(dm);
+
+
+            VMDailyReportMain rm = new VMDailyReportMain();
+            rm.getData.MissionTypes = DVMissionType.Instance.GetAllMissionType();
+            rm.getData.TodayMission = DVDailyMission.Instance.GetTodayMission();
+                 
+
+            return View(rm);
         }
     }
 }

@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="63a33412b97645d4962ab66bc28fcc8f" Name="圖表1">
+      <Diagram DiagramId="b30136c00d5146018db527c7dbf41555" Name="Diagram1">
         <EntityTypeShape EntityType="DailyReportModel.DailyMissionStorage" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="DailyReportModel.FKMissionType" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
       </Diagram>
