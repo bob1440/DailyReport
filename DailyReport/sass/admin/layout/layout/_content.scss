@@ -146,7 +146,7 @@ Page content
 	}
 }
 
-@media (min-width: $screen-md-min) { /* 992px */
+@media (min-width: $screen-md-min) { /* 992px ssss*/
 
 	/* Page content */
 	.page-content-wrapper {
@@ -155,6 +155,7 @@ Page content
 
 		.page-content { 
 			margin-left: $sidebar-width; 
+			margin-right: $sidebar-width; 
 			margin-top: 0px;
 			min-height: $page-content-min-height; 
 			padding: 25px 20px 10px 20px;

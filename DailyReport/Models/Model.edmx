@@ -4,10 +4,10 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="DailyReportModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="DailyReportModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityContainer Name="DailyReportModelStoreContainer">
-          <EntitySet Name="DailyMissionStorage" EntityType="DailyReportModel.Store.DailyMissionStorage" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="FKMissionType" EntityType="DailyReportModel.Store.FKMissionType" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="DailyMissionStorage" EntityType="DailyReportModel.Store.DailyMissionStorage" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="FKMissionType" EntityType="DailyReportModel.Store.FKMissionType" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
         </EntityContainer>
         <EntityType Name="DailyMissionStorage">
           <Key>
@@ -31,7 +31,7 @@
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="DailyReportModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="DailyReportModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
         <EntityContainer Name="DailyReportEntities" p1:LazyLoadingEnabled="true">
           <EntitySet Name="DailyMissionStorage" EntityType="DailyReportModel.DailyMissionStorage" />
           <EntitySet Name="FKMissionType" EntityType="DailyReportModel.FKMissionType" />
@@ -102,6 +102,6 @@
       </DesignerInfoPropertySet>
     </Options>
     <!-- Diagram content (shape and connector positions) -->
-    <Diagrams></Diagrams>
+    <Diagrams />
   </Designer>
 </edmx:Edmx>

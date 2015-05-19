@@ -18,6 +18,14 @@ namespace DailyReport.Controllers
             return View();
         }
 
+        public ActionResult Blog()
+        {
+
+            return View();
+
+        }
+
+
         public ActionResult test()
         {
             DataTable TB = new DataTable();

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="DailyReportModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+<Schema Namespace="DailyReportModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
   <EntityContainer Name="DailyReportEntities" p1:LazyLoadingEnabled="true">
     <EntitySet Name="DailyMissionStorage" EntityType="DailyReportModel.DailyMissionStorage" />
     <EntitySet Name="FKMissionType" EntityType="DailyReportModel.FKMissionType" />

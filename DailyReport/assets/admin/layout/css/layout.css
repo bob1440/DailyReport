@@ -52,8 +52,8 @@ Page Header
   border: 0px;
   padding: 0px;
   box-shadow: none;
-  height: 46px;
-  min-height: 46px;
+  height: 80px;
+  min-height: 80px;
   filter: none;
   background-image: none;
   /* Fixed header */
@@ -72,7 +72,7 @@ Page Header
   float: left;
   display: block;
   width: 235px;
-  height: 46px;
+  height: 80px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -80,7 +80,7 @@ Page Header
   padding: 0;
 }
 .page-header.navbar .page-logo .logo-default {
-  margin: 16px 0 0 0;
+  margin: 8px 0 0 0;
 }
 .page-header.navbar .page-logo .logo-mini {
   display: none;
@@ -98,13 +98,13 @@ Page Header
 }
 .page-header.navbar .search-form {
   display: inline-block;
-  width: 46px;
+  width: 80px;
   position: absolute;
   transition: all 0.6s;
   z-index: 3;
 }
 .page-header.navbar .search-form .input-group .form-control {
-  height: 46px;
+  height: 80px;
   border: 0;
   background: transparent !important;
   font-size: 13px;
@@ -116,12 +116,12 @@ Page Header
   cursor: pointer;
 }
 .page-header.navbar .search-form .input-group .input-group-btn {
-  height: 46px;
+  height: 80px;
 }
 .page-header.navbar .search-form .input-group .input-group-btn .btn.submit {
   margin-left: -24px;
   padding: 0;
-  width: 46px;
+  width: 80px;
   background: none;
   margin-top: 4px;
   display: block;
@@ -182,7 +182,7 @@ Page Header
 .page-header.navbar .top-menu .navbar-nav > li.dropdown {
   margin: 0px;
   padding: 0px 4px;
-  height: 46px;
+  height: 80px;
   display: inline-block;
 }
 .page-header.navbar .top-menu .navbar-nav > li.dropdown:last-child {
@@ -499,7 +499,7 @@ Horizontal Menu
   right: 20px;
 }
 .page-boxed .page-header.navbar .hor-menu .navbar-nav > li.mega-menu-dropdown > .dropdown-menu {
-  top: 46px;
+  top: 80px;
 }
 .page-boxed .page-header.navbar .hor-menu .navbar-nav > li.mega-menu-dropdown.mega-menu-full .dropdown-menu {
   margin: 0;
@@ -775,7 +775,7 @@ Page container
   clear: both;
 }
 .page-header-fixed .page-container {
-  margin-top: 46px;
+  margin-top: 80px;
 }
 .page-footer-fixed.page-footer-fixed-mobile .page-container {
   margin-bottom: 20px !important;
@@ -794,7 +794,7 @@ Page container
     padding: 0 !important;
   }
   .page-header-fixed.page-header-fixed-mobile .page-container {
-    margin-top: 46px !important;
+    margin-top: 80px !important;
   }
 }
 @media (max-width: 480px) {
@@ -1118,7 +1118,7 @@ Page sidebar
   .page-sidebar-fixed .page-sidebar {
     position: fixed !important;
     margin-left: 0;
-    top: 46px;
+    top: 80px;
   }
   .page-sidebar-fixed .page-sidebar-menu > li.last {
     margin-bottom: 15px !important;
@@ -1916,6 +1916,7 @@ Page content
   }
   .page-content-wrapper .page-content {
     margin-left: 235px;
+     margin-right: 235px;
     margin-top: 0px;
     min-height: 600px;
     padding: 25px 20px 10px 20px;

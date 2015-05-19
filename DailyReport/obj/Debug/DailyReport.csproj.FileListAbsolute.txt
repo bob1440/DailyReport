@@ -92,7 +92,6 @@ C:\Users\PUWU\Documents\GitHub\DailyReport\DailyReport\bin\zh-Hant\System.Web.We
 C:\Users\PUWU\Documents\GitHub\DailyReport\DailyReport\bin\zh-Hant\System.Web.Webpages.Deployment.resources.dll
 C:\Users\PUWU\Documents\GitHub\DailyReport\DailyReport\bin\zh-Hant\System.Web.Webpages.Razor.resources.dll
 C:\Users\PUWU\Documents\GitHub\DailyReport\DailyReport\bin\zh-Hant\System.Web.Helpers.resources.dll
-C:\Users\PUWU\Documents\GitHub\DailyReport\DailyReport\obj\Debug\DailyReport.csprojResolveAssemblyReference.cache
 C:\Users\PUWU\Documents\GitHub\DailyReport\DailyReport\obj\Debug\DailyReport.dll
 C:\Users\PUWU\Documents\GitHub\DailyReport\DailyReport\obj\Debug\DailyReport.pdb
 C:\Users\develop1\Documents\GitHub\DailyReport\DailyReport\bin\DailyReport.dll.config
@@ -132,3 +131,5 @@ C:\Users\develop1\Documents\GitHub\DailyReport\DailyReport\bin\zh-Hant\System.We
 C:\Users\develop1\Documents\GitHub\DailyReport\DailyReport\obj\Debug\DailyReport.csprojResolveAssemblyReference.cache
 C:\Users\develop1\Documents\GitHub\DailyReport\DailyReport\obj\Debug\DailyReport.dll
 C:\Users\develop1\Documents\GitHub\DailyReport\DailyReport\obj\Debug\DailyReport.pdb
+C:\Users\PUWU\Documents\GitHub\DailyReport\DailyReport\bin\System.Xml.dll
+C:\Users\PUWU\Documents\GitHub\DailyReport\DailyReport\obj\Debug\DailyReport.csprojResolveAssemblyReference.cache
