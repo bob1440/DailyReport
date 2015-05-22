@@ -20,9 +20,12 @@ namespace DailyReport.Controllers
 
         public ActionResult Blog()
         {
-
             return View();
+        }
 
+        public ActionResult Article()
+        {
+            return View();
         }
 
 
